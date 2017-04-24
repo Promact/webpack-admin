@@ -1,0 +1,21 @@
+<md-toolbar color="primary" class="main-toolbar">
+    <span>Webpack Admin</span>
+    <button md-button [mdMenuTriggerFor]="menu">Shreel<md-icon>keyboard_arrow_down</md-icon></button>
+    <md-menu #menu="mdMenu">
+        <button md-menu-item><md-icon>settings_power</md-icon> Sign Out</button>
+    </md-menu>
+</md-toolbar>
+
+<md-sidenav-container class="main-container">
+    <md-sidenav mode="side" opened="true" class="main-sidenav">
+        <md-nav-list>
+            <a md-list-item> Menu 01 </a>
+            <a md-list-item> Menu 02 </a>
+            <a md-list-item> Menu 03 </a>
+            <a md-list-item> Menu 04 </a>
+        </md-nav-list>
+    </md-sidenav>
+    <div class="main-content">
+        <h1>Main Content Goes Here</h1>
+    </div>
+</md-sidenav-container>
