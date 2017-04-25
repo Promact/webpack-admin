@@ -9,13 +9,13 @@
 <md-sidenav-container class="main-container">
     <md-sidenav mode="side" opened="true" class="main-sidenav">
         <md-nav-list>
-            <a md-list-item> Menu 01 </a>
-            <a md-list-item> Menu 02 </a>
-            <a md-list-item> Menu 03 </a>
-            <a md-list-item> Menu 04 </a>
+            <a md-list-item [routerLinkActive]="['active']" [routerLink]="['page1']"> Page 1 </a>
+            <a md-list-item [routerLinkActive]="['active']" [routerLink]="['page2']"> Page 2 </a>
+            <a md-list-item> Page 3 </a>
+            <a md-list-item> Page 4 </a>
         </md-nav-list>
     </md-sidenav>
     <div class="main-content">
-        <h1>Main Content Goes Here</h1>
+        <router-outlet></router-outlet>
     </div>
 </md-sidenav-container>
